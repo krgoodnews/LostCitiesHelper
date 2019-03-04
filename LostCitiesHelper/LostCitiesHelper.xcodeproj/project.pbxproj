@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91930581493605A12A35C8A9 /* Pods_LostCitiesHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A207809CC6A9814A6C17A1D /* Pods_LostCitiesHelper.framework */; };
 		F38D1DCC222D490A003216F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38D1DCB222D490A003216F9 /* AppDelegate.swift */; };
 		F38D1DCE222D490A003216F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38D1DCD222D490A003216F9 /* ViewController.swift */; };
 		F38D1DD1222D490A003216F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F38D1DCF222D490A003216F9 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A207809CC6A9814A6C17A1D /* Pods_LostCitiesHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LostCitiesHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AAF90A0B9A2A716601FD039 /* Pods-LostCitiesHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LostCitiesHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LostCitiesHelper/Pods-LostCitiesHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		57F0654BCDBE410005B595E6 /* Pods-LostCitiesHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LostCitiesHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-LostCitiesHelper/Pods-LostCitiesHelper.release.xcconfig"; sourceTree = "<group>"; };
 		F38D1DC8222D490A003216F9 /* LostCitiesHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostCitiesHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F38D1DCB222D490A003216F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F38D1DCD222D490A003216F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91930581493605A12A35C8A9 /* Pods_LostCitiesHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FC21A404CAA1A09F88650A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AAF90A0B9A2A716601FD039 /* Pods-LostCitiesHelper.debug.xcconfig */,
+				57F0654BCDBE410005B595E6 /* Pods-LostCitiesHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		74EF70445E9A2434A0791442 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A207809CC6A9814A6C17A1D /* Pods_LostCitiesHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F38D1DBF222D490A003216F9 = {
 			isa = PBXGroup;
 			children = (
 				F38D1DCA222D490A003216F9 /* LostCitiesHelper */,
 				F38D1DC9222D490A003216F9 /* Products */,
+				2FC21A404CAA1A09F88650A7 /* Pods */,
+				74EF70445E9A2434A0791442 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F38D1DDA222D490C003216F9 /* Build configuration list for PBXNativeTarget "LostCitiesHelper" */;
 			buildPhases = (
+				8FD6ED4A0B04100071A242D8 /* [CP] Check Pods Manifest.lock */,
 				F38D1DC4222D490A003216F9 /* Sources */,
 				F38D1DC5222D490A003216F9 /* Frameworks */,
 				F38D1DC6222D490A003216F9 /* Resources */,
+				6B78E33427DB5EE91D9A4467 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B78E33427DB5EE91D9A4467 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LostCitiesHelper/Pods-LostCitiesHelper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LostCitiesHelper/Pods-LostCitiesHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FD6ED4A0B04100071A242D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LostCitiesHelper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F38D1DC4222D490A003216F9 /* Sources */ = {
@@ -280,6 +355,7 @@
 		};
 		F38D1DDB222D490C003216F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AAF90A0B9A2A716601FD039 /* Pods-LostCitiesHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +375,7 @@
 		};
 		F38D1DDC222D490C003216F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57F0654BCDBE410005B595E6 /* Pods-LostCitiesHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
