@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13F3F56117A0002A05CE1CF4 /* CardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3FAA74FD7EB9CB5EE4F25 /* CardButton.swift */; };
+		13F3F6BD99D73E6DEF1B9A4A /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3F4EFC7B3AB54970D3CBD /* City.swift */; };
+		13F3F782C438700ECB446E94 /* InputScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3F9034CD30FA3253A4742 /* InputScoreViewController.swift */; };
+		13F3F7F93EFA91257F921208 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3FAB43783EBA573E888FF /* Card.swift */; };
+		13F3F8A5876FC11CA016CC58 /* InputScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3FE435C19C909F9083E96 /* InputScoreCell.swift */; };
+		13F3FBB6683A249ACD6277CB /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3FEC96B8C85CA762B43FA /* Game.swift */; };
+		13F3FDCF1700A20C06265900 /* CityStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3FE656A930E9E1F4AA171 /* CityStackView.swift */; };
 		91930581493605A12A35C8A9 /* Pods_LostCitiesHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A207809CC6A9814A6C17A1D /* Pods_LostCitiesHelper.framework */; };
 		F38D1DCC222D490A003216F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38D1DCB222D490A003216F9 /* AppDelegate.swift */; };
-		F38D1DCE222D490A003216F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38D1DCD222D490A003216F9 /* ViewController.swift */; };
 		F38D1DD1222D490A003216F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F38D1DCF222D490A003216F9 /* Main.storyboard */; };
 		F38D1DD3222D490C003216F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F38D1DD2222D490C003216F9 /* Assets.xcassets */; };
 		F38D1DD6222D490C003216F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F38D1DD4222D490C003216F9 /* LaunchScreen.storyboard */; };
@@ -17,11 +23,17 @@
 
 /* Begin PBXFileReference section */
 		0A207809CC6A9814A6C17A1D /* Pods_LostCitiesHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LostCitiesHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13F3F4EFC7B3AB54970D3CBD /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		13F3F9034CD30FA3253A4742 /* InputScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputScoreViewController.swift; sourceTree = "<group>"; };
+		13F3FAA74FD7EB9CB5EE4F25 /* CardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardButton.swift; sourceTree = "<group>"; };
+		13F3FAB43783EBA573E888FF /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		13F3FE435C19C909F9083E96 /* InputScoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputScoreCell.swift; sourceTree = "<group>"; };
+		13F3FE656A930E9E1F4AA171 /* CityStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityStackView.swift; sourceTree = "<group>"; };
+		13F3FEC96B8C85CA762B43FA /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		3AAF90A0B9A2A716601FD039 /* Pods-LostCitiesHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LostCitiesHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LostCitiesHelper/Pods-LostCitiesHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		57F0654BCDBE410005B595E6 /* Pods-LostCitiesHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LostCitiesHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-LostCitiesHelper/Pods-LostCitiesHelper.release.xcconfig"; sourceTree = "<group>"; };
 		F38D1DC8222D490A003216F9 /* LostCitiesHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostCitiesHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F38D1DCB222D490A003216F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F38D1DCD222D490A003216F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F38D1DD0222D490A003216F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F38D1DD2222D490C003216F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F38D1DD5222D490C003216F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +52,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13F3F2B1A45A7CCD23E1AE44 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				13F3F9034CD30FA3253A4742 /* InputScoreViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		13F3F4C4E50D8C8421F267A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13F3F4EFC7B3AB54970D3CBD /* City.swift */,
+				13F3FEC96B8C85CA762B43FA /* Game.swift */,
+				13F3FAB43783EBA573E888FF /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13F3FCE5B0574C45984CDF1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13F3FE435C19C909F9083E96 /* InputScoreCell.swift */,
+				13F3FE656A930E9E1F4AA171 /* CityStackView.swift */,
+				13F3FAA74FD7EB9CB5EE4F25 /* CardButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2FC21A404CAA1A09F88650A7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,11 +119,13 @@
 			isa = PBXGroup;
 			children = (
 				F38D1DCB222D490A003216F9 /* AppDelegate.swift */,
-				F38D1DCD222D490A003216F9 /* ViewController.swift */,
 				F38D1DCF222D490A003216F9 /* Main.storyboard */,
 				F38D1DD2222D490C003216F9 /* Assets.xcassets */,
 				F38D1DD4222D490C003216F9 /* LaunchScreen.storyboard */,
 				F38D1DD7222D490C003216F9 /* Info.plist */,
+				13F3FCE5B0574C45984CDF1E /* View */,
+				13F3F2B1A45A7CCD23E1AE44 /* Controller */,
+				13F3F4C4E50D8C8421F267A6 /* Model */,
 			);
 			path = LostCitiesHelper;
 			sourceTree = "<group>";
@@ -210,8 +252,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F38D1DCE222D490A003216F9 /* ViewController.swift in Sources */,
 				F38D1DCC222D490A003216F9 /* AppDelegate.swift in Sources */,
+				13F3F782C438700ECB446E94 /* InputScoreViewController.swift in Sources */,
+				13F3F8A5876FC11CA016CC58 /* InputScoreCell.swift in Sources */,
+				13F3FDCF1700A20C06265900 /* CityStackView.swift in Sources */,
+				13F3F6BD99D73E6DEF1B9A4A /* City.swift in Sources */,
+				13F3FBB6683A249ACD6277CB /* Game.swift in Sources */,
+				13F3F56117A0002A05CE1CF4 /* CardButton.swift in Sources */,
+				13F3F7F93EFA91257F921208 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
