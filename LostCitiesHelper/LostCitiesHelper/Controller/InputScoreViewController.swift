@@ -27,8 +27,8 @@ class InputScoreViewController: UIViewController {
 
     if let layout = $0.collectionViewLayout as? UICollectionViewFlowLayout {
       layout.scrollDirection = .horizontal
-      layout.sectionInset = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
-      layout.minimumLineSpacing = 8
+      layout.sectionInset = UIEdgeInsets(top: 0, left: 4, bottom: 0, right: 4)
+      layout.minimumLineSpacing = 4
     }
   }
 
@@ -56,8 +56,7 @@ extension InputScoreViewController: UICollectionViewDelegate, UICollectionViewDa
   public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: inputScoreCellID, for: indexPath) as! InputScoreCell
 
-    cell.layer.borderColor = UIColor.red.cgColor
-    cell.layer.borderWidth = 1
+    cell.game = Game(playerName: "Guinnessys")
 
     return cell
   }

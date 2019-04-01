@@ -4,3 +4,18 @@
 //
 
 import Foundation
+
+struct Game {
+  var playerName: String
+  var cities: [City]
+
+  init(playerName: String) {
+    self.playerName = playerName
+    self.cities = [City(cityType: .pompeii),
+                   City(cityType: .amazon),
+                   City(cityType: .himalaya),
+                   City(cityType: .egypt),
+                   City(cityType: .atlantis),
+                   City(cityType: .darkWorld)]
+  }
+}

@@ -10,6 +10,25 @@ import SnapKit
 
 class InputScoreCell: BaseCell {
 
+  var game: Game? {
+    didSet {
+      setupUI()
+    }
+  }
+
+  private func setupUI() {
+    guard let game = game else {
+      return
+    }
+
+    for i in 0..<game.cities.count {
+//      let cityStackView = CityStackView()
+//      cityStackView.city = game.cities[i]
+      let cityStackView = CityStackView(city: game.cities[i])
+      citiesStackView.addArrangedSubview(cityStackView)
+    }
+  }
+
   public static func size(collectionViewSize: CGSize) -> CGSize {
     let width = collectionViewSize.width - 24
     let height = collectionViewSize.height
@@ -29,10 +48,6 @@ class InputScoreCell: BaseCell {
       $0.edges.equalToSuperview().inset(8)
     }
 
-    for i in 0..<6 {
-      let cityStackView = CityStackView()
-      citiesStackView.addArrangedSubview(cityStackView)
-    }
   }
 }
 

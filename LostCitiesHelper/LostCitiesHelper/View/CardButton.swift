@@ -8,16 +8,30 @@ import UIKit
 import Then
 import SnapKit
 
-class CardButton: UIButton {
+class CardButton: SmartAdjustTitleColorButton {
   var card: Card {
     didSet {
       fillUI()
     }
   }
 
+  var cardColor: UIColor {
+    return card.city.cityType.themeColor
+  }
+
+  override var isHighlighted: Bool {
+    didSet {
+      if isHighlighted {
+        backgroundColor = cardColor.withAlphaComponent(0.5)
+        return
+      }
+
+      fillUI()
+    }
+  }
+
   private func fillUI() {
-    backgroundColor = UIColor.red.withAlphaComponent(card.isHaving ? 0.8 : 0.2)
-    setTitleColor(card.isHaving ? .white : .gray, for: .normal)
+    backgroundColor = cardColor.withAlphaComponent(card.isHaving ? 0.8 : 0.2)
   }
 
   init(card: Card) {
@@ -32,7 +46,8 @@ class CardButton: UIButton {
     setTitle(buttonTitle, for: .normal)
 
     layer.borderWidth = 1
-    layer.borderColor = UIColor.white.cgColor
+    layer.borderColor = cardColor.cgColor
+
     self.addTarget(self, action: #selector(didTapCard), for: .touchUpInside)
     fillUI()
   }
@@ -43,5 +58,6 @@ class CardButton: UIButton {
 
   @objc private func didTapCard() {
     card.isHaving = !card.isHaving
+    print("card.city.score = \(card.city.score)")
   }
 }

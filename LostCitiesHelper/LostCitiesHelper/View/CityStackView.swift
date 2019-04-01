@@ -9,9 +9,18 @@ import Then
 import SnapKit
 
 class CityStackView: UIStackView {
-  override init(frame: CGRect) {
-    super.init(frame: frame)
+  var city: City {
+    didSet {
+      fillUI()
+    }
+  }
 
+  private func fillUI() {
+  }
+
+  init(city: City) {
+    self.city = city
+    super.init(frame: .zero)
     setupView()
   }
 
@@ -21,13 +30,14 @@ class CityStackView: UIStackView {
     axis = .vertical
 
     for i in 2...10 {
-      let button = CardButton(card: Card(.number, number: i))
+      let button = CardButton(card: Card(city: self.city, type: .number, number: i))
       self.addArrangedSubview(button)
     }
+
   }
 
   required init(coder: NSCoder) {
-    super.init(coder: coder)
+    fatalError()
   }
 
 }

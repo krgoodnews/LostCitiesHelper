@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13F3F2DB2BF635E50AE23373 /* SmartAdjustTitleColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3F7B7633E2D89364DE17B /* SmartAdjustTitleColorButton.swift */; };
 		13F3F56117A0002A05CE1CF4 /* CardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3FAA74FD7EB9CB5EE4F25 /* CardButton.swift */; };
 		13F3F6BD99D73E6DEF1B9A4A /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3F4EFC7B3AB54970D3CBD /* City.swift */; };
 		13F3F782C438700ECB446E94 /* InputScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3F9034CD30FA3253A4742 /* InputScoreViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		0A207809CC6A9814A6C17A1D /* Pods_LostCitiesHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LostCitiesHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F3F4EFC7B3AB54970D3CBD /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		13F3F7B7633E2D89364DE17B /* SmartAdjustTitleColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartAdjustTitleColorButton.swift; sourceTree = "<group>"; };
 		13F3F9034CD30FA3253A4742 /* InputScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputScoreViewController.swift; sourceTree = "<group>"; };
 		13F3FAA74FD7EB9CB5EE4F25 /* CardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardButton.swift; sourceTree = "<group>"; };
 		13F3FAB43783EBA573E888FF /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				13F3FE435C19C909F9083E96 /* InputScoreCell.swift */,
 				13F3FE656A930E9E1F4AA171 /* CityStackView.swift */,
 				13F3FAA74FD7EB9CB5EE4F25 /* CardButton.swift */,
+				13F3F7B7633E2D89364DE17B /* SmartAdjustTitleColorButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				13F3FBB6683A249ACD6277CB /* Game.swift in Sources */,
 				13F3F56117A0002A05CE1CF4 /* CardButton.swift in Sources */,
 				13F3F7F93EFA91257F921208 /* Card.swift in Sources */,
+				13F3F2DB2BF635E50AE23373 /* SmartAdjustTitleColorButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
